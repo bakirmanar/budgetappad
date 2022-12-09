@@ -1,0 +1,49 @@
+body,
+html {
+  background: #060606;
+  font-size: 14px;
+}
+
+.container {
+  width: min(100%, 800px);
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.description {
+  font-size: 3rem;
+}
+
+@keyframes gradient {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+
+.gradient {
+  --bg-size: 400%;
+  background: -webkit-linear-gradient(
+    45deg,
+    #EEF85B 5%,
+    #7AEC8D 16%,
+    #09E5C3 27%,
+    #4286f4 38%,
+    #4A00E0 49%,
+    #5D26C1 60%,
+    #a17fe0 71%,
+    #7AEC8D 82%,
+    #EEF85B 95%
+  ) 0 0 / var(--bg-size) 100%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  color: #060606;
+
+  animation: gradient 20s infinite linear;
+}
+
+
